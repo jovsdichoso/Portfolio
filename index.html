@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jovs Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="https://kit.fontawesome.com/97c444764d.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #333;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+      margin-right: 15px;
+    }
+    .section {
+      height: 100vh ;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      .section {
+        height: auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    }
+    .fade-in.right {
+      transform: translateX(100%);
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    #home { background-color: #282c34; color: white;}
+    #about { background-color: #f7f7f7; height: auto;}
+    #contact { background-color: #d4e6f1;}
+    .profile {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+    }
+    .text {
+      text-align: start;
+    }
+    .progress-bar {
+      transition: width 1s ease-in-out;
+      width: 0%; 
+    }
+    .card-img-top {
+      width: 100%;
+      max-height: 150px; 
+      object-fit: cover; 
+    }
+    .contact-details p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .contact-details i {
+      margin-right: 8px;
+      color: #333;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icon {
+      font-size: 30px;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icon:hover {
+      color: #007bff;
+      transform: scale(1.2);
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    
+    .card-img-top {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.1);
+    }
+    
+
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">Jovie Dichoso</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section text-center">
+    <h1 class="fade-in mb-4">Welcome to My Portfolio</h1>
+  </section>
+<!-- About Me Section -->
+<section id="about" class="section">
+  <div class="container mt-5 mb-5">
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <img class="profile fade-in right img-fluid" src="https://scontent.fwnp1-1.fna.fbcdn.net/v/t39.30808-6/458396060_1158289498604442_6053055161282981386_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHXOUAqgRkDZF3d2EO_R4xgYNXMsC4ph19g1cywLimHX79gG-1MpBSxYWHxCBDcOiv_3bF4J0J1TRxjC8ADbGut&_nc_ohc=N1iQvjwKAf8Q7kNvgGWyByv&_nc_ht=scontent.fwnp1-1.fna&oh=00_AYAzWCmsy-ZYj-hKWYvilU-QZDjrNIDvojaIjIc74038sg&oe=66DF8391" alt="Profile Picture">
+      </div>
+      <div class="col-lg-8 col-md-12 text" style="padding-left: 15px; padding-right: 15px;">
+        <h1 class="fade-in right">About Me</h1>
+        <p class="fade-in right">I am a 3rd-year student pursuing a Bachelor of Science in Information Technology. My passion for creativity extends beyond just sketching and photography—I love translating that artistic flair into web design.</p>
+        <h3 class="fade-in right">Skills</h3>
+        <h5 class="fade-in right">HTML, CSS</h5>
+        <div class="progress">
+          <div class="progress-bar bg-secondary" style="width:50%"></div>
+        </div><br>
+        <h5 class="fade-in right">PHP</h5>
+        <div class="progress">
+          <div class="progress-bar bg-secondary" style="width:40%"></div>
+        </div>
+        <br>
+        <h5 class="fade-in right">PYTHON</h5>
+        <div class="progress">
+          <div class="progress-bar bg-secondary" style="width:10%"></div>
+        </div>
+        <br>
+        <h5 class="fade-in right">JAVASCRIPT</h5>
+        <div class="progress">
+          <div class="progress-bar bg-secondary" style="width:20%"></div>
+        </div>
+        <br>
+        <h5 class="fade-in right">KAKUPALAN</h5>
+        <div class="progress">
+          <div class="progress-bar bg-secondary" style="width:100%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hobby Cards Section -->
+    <div class="hobbies-section mt-5">
+      <h1 class="fade-in right mb-4">My Hobbies</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <div class="card fade-in right">
+            <img src="drawing.jpg" class="card-img-top" alt="Drawing">
+            <div class="card-body">
+              <h5 class="card-title">Drawing</h5>
+              <p class="card-text">Exploring creativity through sketching and painting.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <div class="card fade-in right">
+            <img src="photography.jpg" class="card-img-top" alt="Photography">
+            <div class="card-body">
+              <h5 class="card-title">Photography</h5>
+              <p class="card-text">Capturing moments and memories through the lens.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <div class="card fade-in right">
+            <img src="coffee.jpg" class="card-img-top" alt="Coffee">
+            <div class="card-body">
+              <h5 class="card-title">Coffee</h5>
+              <p class="card-text">Enjoying different brews and exploring coffee culture.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+          <div class="card fade-in right">
+            <img src="movie.jpg" class="card-img-top" alt="Movies">
+            <div class="card-body">
+              <h5 class="card-title">Movies</h5>
+              <p class="card-text">Watching and analyzing films from different genres and eras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+  
+    <section id="contact" class="section">
+      <div class="container text-center">
+        <h2 class="fade-in">Get in Touch</h2>
+        <p class="fade-in">Feel free to reach out to me through email, phone, or connect with me on social media!</p>
+        
+        <!-- Contact Details -->
+        <div class="contact-details fade-in">
+          <p><i class="fas fa-envelope"></i> Email: <a href="mailto:papidichoso.jd@gmail.com">joviedichoso@yahoo.com</a></p>
+          <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+09*********">09*********</a></p>
+        </div>
+    
+        <!-- Social Media Links -->
+        <div class="social-icons mt-4 fade-in">
+          <a href="https://www.facebook.com/jovsdichoso26" target="_blank" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://github.com/jovsdichoso" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/justt.jovs/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS for animations -->
+  <script>
+    // Function to add 'show' class when elements are in viewport
+    function fadeInOnScroll() {
+      const fadeIns = document.querySelectorAll('.fade-in');
+      fadeIns.forEach(element => {
+        const position = element.getBoundingClientRect();
+        if (position.top < window.innerHeight - 100) {
+          element.classList.add('show');
+        }
+      });
+    }
+
+    // Trigger animation on scroll
+    window.addEventListener('scroll', fadeInOnScroll);
+    window.addEventListener('load', fadeInOnScroll); // Initial check
+
+    // Animate progress bars on scroll
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(bar => {
+      const width = bar.style.width;
+      bar.style.width = '0%'; // Start at 0%
+      
+      window.addEventListener('scroll', function () {
+        const position = bar.getBoundingClientRect();
+        if (position.top < window.innerHeight) {
+          bar.style.width = width; // Animate to the correct width
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

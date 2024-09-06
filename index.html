@@ -20,6 +20,14 @@
       color: white !important;
       margin-right: 15px;
     }
+    .navbar-nav .nav-link:hover{
+      color: #FABC3F !important;
+      transition: 0.4s ease;
+    }
+    .navbar-brand:hover{
+      color: #FABC3F !important;
+      transition: 0.4s ease;
+    }
     .section {
       height: 100vh ;
       padding: 50px;
@@ -107,6 +115,9 @@
       transform: scale(1.2);
     }
     .card {
+      width: 100%;
+      max-width: 300px; 
+      margin: 0 auto; 
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -114,7 +125,6 @@
       transform: scale(1.05);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
-
     
     .card-img-top {
       transition: transform 0.3s ease;
@@ -123,7 +133,11 @@
     .card:hover .card-img-top {
       transform: scale(1.1);
     }
-    
+
+    .carousel img{
+        height: 250px; 
+        object-fit: cover; 
+    }
 
   </style>
 </head>
@@ -218,48 +232,200 @@
 
     <!-- Hobby Cards Section -->
     <div class="hobbies-section mt-5">
-      <h1 class="fade-in right mb-4">My Hobbies</h1>
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-          <div class="card fade-in right">
-            <img src="drawing.jpg" class="card-img-top" alt="Drawing">
-            <div class="card-body">
-              <h5 class="card-title">Drawing</h5>
-              <p class="card-text">Exploring creativity through sketching and painting.</p>
+        <h1 class="fade-in right mb-4">My Hobbies</h1>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div class="card fade-in right">
+                <div id="carouselExampleRide3" class="carousel slide" data-bs-ride="true">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/d1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/d2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/d3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/d4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/d5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/d6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/d7.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Drawing</h5>
+                <p class="card-text">Exploring creativity through sketching and painting.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-          <div class="card fade-in right">
-            <img src="photography.jpg" class="card-img-top" alt="Photography">
-            <div class="card-body">
-              <h5 class="card-title">Photography</h5>
-              <p class="card-text">Capturing moments and memories through the lens.</p>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div class="card fade-in right">
+              <div id="carouselExampleRide1" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/6.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/9.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/20.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/29.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/28.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/31.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/32.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/27.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Photography</h5>
+                <p class="card-text">Capturing moments and memories through the lens.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-          <div class="card fade-in right">
-            <img src="coffee.jpg" class="card-img-top" alt="Coffee">
-            <div class="card-body">
-              <h5 class="card-title">Coffee</h5>
-              <p class="card-text">Enjoying different brews and exploring coffee culture.</p>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div class="card fade-in right">
+              <div id="carouselExampleRide2" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/coffee.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/24.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/23.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/30.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/15.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/14.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/13.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/19.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/18.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/17.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Coffee</h5>
+                <p class="card-text">Enjoying different brews and exploring coffee culture.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-          <div class="card fade-in right">
-            <img src="movie.jpg" class="card-img-top" alt="Movies">
-            <div class="card-body">
-              <h5 class="card-title">Movies</h5>
-              <p class="card-text">Watching and analyzing films from different genres and eras.</p>
+          <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+            <div class="card fade-in right">
+              <div id="carouselExampleRide4" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/movie.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/m1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/m2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/m3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide4" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Movies</h5>
+                <p class="card-text">Watching and analyzing films from different genres and eras.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   
 

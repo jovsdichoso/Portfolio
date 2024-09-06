@@ -56,7 +56,10 @@
       opacity: 1;
       transform: translateX(0);
     }
-    #home { background-color: #282c34; color: white;}
+    #home { background-color: #282c34; color: white;
+          display: flex;
+          flex-direction: column;
+          }
     #about { background-color: #f7f7f7; height: auto;}
     #contact { background-color: #d4e6f1;}
     .profile {
@@ -152,6 +155,29 @@
   <!-- Home Section -->
   <section id="home" class="section text-center">
     <h1 class="fade-in mb-4">Welcome to My Portfolio</h1>
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Music taste
+    </button>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">My Music taste</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7n3CVcjIpGc23rnWY2xms5?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
   </section>
 <!-- About Me Section -->
 <section id="about" class="section">
